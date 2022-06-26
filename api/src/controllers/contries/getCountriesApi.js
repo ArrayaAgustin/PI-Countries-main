@@ -17,7 +17,7 @@ const getContriesApi=async()=>{
             population: country.population
             }
         ))
-        Country.bulkCreate(contries)
+        await Country.bulkCreate(contries)
         return contries;      
     } catch (err) {
         return new Error("Error: "+e)

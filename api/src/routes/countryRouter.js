@@ -8,7 +8,7 @@ const router=Router()
 router.get("/",async(req,res)=>{
   const {name}=req.query;
   
-  const countries=await getCountriesAll(name);
+  const countries= await getCountriesAll(name);
   return res.json(countries)
 })
 

@@ -2,6 +2,8 @@
 
 const initialState={
     countries:[],
+    country:{},
+    setInput:""
 }
 
 function rootReducer(state=initialState,{type,payload}){
@@ -12,6 +14,19 @@ function rootReducer(state=initialState,{type,payload}){
                 countries:payload
             }
             ;
+            case 'GET_COUNTRIES_NAME':
+                return{
+                    ...state,
+                    countries:payload,
+                    
+                }
+                ; 
+            case 'GET_COUNTRY_ID':
+                return{
+                    ...state,
+                    country:payload
+                }
+                ;    
     
         default:
            return {...state}

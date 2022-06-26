@@ -13,13 +13,13 @@ const getContriesDb=async(param="")=>{
             where:busqueda,
             include:{
                     model:Activity,
-                    attributes: ["name"],
+                   attributes: ["id",'name'],
                     through:{
                             attributes: [],
                             }
                     }
         })
-        return contries.length!==0?contries:`Not found , no se encontro un pais que su nombre contenga: ${param}`;     
+        return contries.length!==0?contries:[];     
     } catch (err) {
         return new Error("Error: "+e)
     }
