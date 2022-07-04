@@ -1,0 +1,40 @@
+
+.nav{
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(1,90,108,1) 100%);
+	color:white;
+
+}
+.ulNav{
+	width: auto;
+	height: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(1,90,108,1) 100%);
+	color:white;
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	gap:2rem;
+	padding: 0 1rem;
+	text-transform: uppercase;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 100px;
+	list-style:none;
+}
+.navLink{
+	color:white;
+	text-decoration: none;
+}
+
+.liItem{
+	font-size: 20 px;
+	margin-right: 20px;
+	color:white,
+
+	
+}
+
+
+

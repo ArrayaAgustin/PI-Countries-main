@@ -3,13 +3,15 @@ import Country from './Country'
 import '../style/Countries.css'
 
 function Countries({Countries}) {
+  
   return (
     <div className='Countries-container'>
       <div className='Countries'>
         {Countries&&Countries.map((country)=>{
+          
             return(
             
-                <Country 
+            <Country 
             key={country.id}
             id={country.id}
             name={country.name}
@@ -18,9 +20,10 @@ function Countries({Countries}) {
             population={country.population}
             activities={country.Activities}
             />
-            
+           
             
             )
+            
           })}
 
       </div>

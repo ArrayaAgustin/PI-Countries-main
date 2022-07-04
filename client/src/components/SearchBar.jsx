@@ -1,50 +1,48 @@
 import React, { useState} from "react";
-import {getCountriesName} from '../redux/actions/index.js'
+import { getCountriesName,} from '../redux/actions/index.js'
 import {useDispatch} from 'react-redux'
 import { useEffect } from "react";
+import s from '../style/SearchBar.module.css'
 
-//import { search } from "../../../api/src/routes/countryRouter.js";
 
 
 
 function SearchBar() {
-
+  const dispatch=useDispatch()
   const [input,setInput]=useState("");
-  let dispatch=useDispatch()
+  
+  
+
+  useEffect(()=>{
+  
+     dispatch(getCountriesName(input))
+     
+
+     
+   },[dispatch,input])
 
   const handleInputChange=(e)=>{
-    setInput(e.target.value)
-    
+    setInput(e.target.value) 
   }
-  useEffect(()=>{
-    dispatch(getCountriesName(input))
-  },[dispatch,input])
+ 
 
-  // const searchCountries=(e)=>{
-  //   e.preventDefault()
-  //   dispatch(getCountriesName(input))
-  //   setInput('')
-  //   document.getElementById('inputSearch').value=''
-  // }
   return (
     <>
-    <div>
-     <form id="searchName">
+    <div className="">
+     
        <input 
+       className={s.input}
         id="inputSearch"
         type="text"
         placeholder="Search Countries..."
         onChange={handleInputChange}>
        </input>
-       <button
+       {/* <button
        name="Search"
        type="submit"
-       value="Search"
+       value={input}
        //onClick={searchCountries}
-       >Search</button>
-
-    </form>
-      
+       >Search</button> */}  
        
     </div>
    

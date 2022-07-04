@@ -7,12 +7,22 @@
     width: 90%;
 }
 
-.Countries{
+/* .Countries{
     width: 600px;
     height: 1100px;
     display: flex;
     margin:auto;
     background: lightblue;
     flex-wrap: wrap;
+    justify-content: space-between;
+} */
+.Countries{
+    width: 550px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin:20px;
+    background: transparent;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }

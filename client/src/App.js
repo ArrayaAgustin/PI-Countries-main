@@ -5,14 +5,16 @@ import ActivityForm from "./components/ActivityForm";
 import Home from './components/Home';
 import NavBar from "./components/NavBar";
 import  Details  from "./components/Details.jsx";
+import Landing from "./components/Landing";
 
 function App() {
   return (
      <div>
-      <NavBar></NavBar>
-    <Routes>
-    <Route exact path="/home" element={<Home />}/>
-    <Route exact path="/home/:id" element={<Details />}/>
+  
+    <Routes> 
+    <Route path="/" element={<Landing/>}/>  
+    <Route path="/home" element={<Home/>}/>
+    <Route path="/home/:id" element={<Details />}/>
     <Route path="/activity" element={<ActivityForm />}/>
     </Routes>
     </div>

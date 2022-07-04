@@ -1,5 +1,5 @@
 const {Router}=require("express")
-const {createActivity,getActivities}=require("../controllers/activity/activitiesController")
+const {createActivity,createActivity2,getActivities}=require("../controllers/activity/activitiesController")
 const { route } = require("./countryRouter")
 
 const router=Router()
@@ -8,11 +8,23 @@ router.post("/",async(req,res)=>{
     try {
          const {name,difficulty,duration,season,countries}=req.body
          const act=await createActivity(name,difficulty,duration,season,countries)
-         res.status(201).json("Se creo con exito la actividad")
+         res.status(201).json(act)
     } catch (err) {
         console.log("Error"+err)
     }
 })
+
+router.get("/",async(req,res)=>{
+    try {
+         const {name,countries}=req.body
+         const act=await createActivity2(name,countries)
+         res.status(201).send(act)
+    } catch (err) {
+        console.log("Error"+err)
+    }
+})
+
+
 
 
 module.exports=router;

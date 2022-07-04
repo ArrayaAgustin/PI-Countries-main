@@ -5,7 +5,7 @@ const {Op}=require("sequelize")
 
 const getContriesDb=async(param="")=>{
     let busqueda=param===""?{}:{name:{
-        [Op.iLike]:`${param}%`
+        [Op.iLike]:`%${param}%`
            }
     }
     try {
@@ -13,13 +13,15 @@ const getContriesDb=async(param="")=>{
             where:busqueda,
             include:{
                     model:Activity,
-                   attributes: ["id",'name'],
+                //    attributes: [''],
                     through:{
                             attributes: [],
                             }
                     }
         })
-        return contries.length!==0?contries:[];     
+        
+        return contries.length!==0?contries:[]; 
+     
     } catch (err) {
         return new Error("Error: "+e)
     }

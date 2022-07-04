@@ -1,0 +1,125 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(1,90,108,1) 100%);
+    
+}
+
+
+.img{
+    width: 230px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+
+.detailCountry{
+    color: rgb(0, 0, 0);
+    background-color: var(--contrast);
+    width: 850px;
+    box-shadow: 10px 10px 5px var(--shadow);
+    border:5px solid black;
+}
+.detailTitle{
+    display: inline-block;
+    justify-content:center;
+    align-items:center;
+
+   
+}
+.detailTitle h1{
+    display: inline-block;
+    margin-left:200px;
+    
+   
+}
+.detailTitle button{
+    display: inline-block;
+    margin-left:20px;
+      
+}
+
+
+.columns{
+    justify-content: center;
+    align-items: center;
+    margin :10px;
+    display: flex;
+    border:4px solid red;
+}
+
+.columnLeft{
+ margin:10px;
+ border:2px solid blue;
+ width: auto;
+ background-color: black;
+ color:white
+}
+.columnRigth{
+    margin:10px;
+    border:2px solid blue;
+    width: auto;
+
+    background-color: black;
+    color:white
+}
+
+.countryInfo{
+   
+    margin: 5px ;
+    border:2px solid green;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.countryInfo h1{
+   
+    display: inline;
+}
+.countryInfo h3{
+    width: 20px;
+    height: 20px;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+.activitiesTitle{
+    padding-left: 30px;
+}
+
+.detailActivities{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.detailActivity h3{
+    display: inline;
+}
+
+.activityInfo{
+   
+    margin: 5px ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    max-width: 100%;
+
+}
+
+.imgActivity{
+    width: 400px;
+    height: auto;
+    border: 1px solid black;  
+}
+
+.title{
+    
+}

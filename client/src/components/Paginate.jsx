@@ -1,10 +1,11 @@
 import React from 'react'
 import '../style/Paginate.css'
 function Paginate({countriesByPage,allCountries,pagination}) {
-  allCountries.splice(9,0,{})
+ 
   const pageNumbers =[]
-     for (let i = 1; i <=Math.ceil((allCountries/countriesByPage)); i++) 
+     for (let i = 1; i <=Math.ceil(((allCountries+1)/countriesByPage)); i++) 
      { pageNumbers.push(i)}
+
  
 return (
     

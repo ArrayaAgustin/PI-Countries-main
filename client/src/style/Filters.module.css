@@ -1,0 +1,27 @@
+.filterContainer{
+    margin-top: 150px;
+    width: 200px;
+    height: auto;
+    background-color:transparent;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border:2px solid white ;
+    border-radius: 10%;
+   
+}
+.order{
+    border :2px solid red;
+    justify-content: center;
+    align-items: center;
+}
+ h2{
+    text-align: center;
+}
+
+.filter{
+    border :2px solid red;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,23 +1,20 @@
 import React from 'react'
 
 import {NavLink}from 'react-router-dom'
-import '../style/NavBar.css'
+import s from '../style/NavBar.module.css'
 import SearchBar from './SearchBar.jsx';
 
 function NavBar() {
 
-  
-
-  
   return (
 
-   <nav >
-   
-       <NavLink className={'nav-link'} exact to={'/home'}  >Home</NavLink>
-       <NavLink className={'nav-link'} exact to={'/activity'}  >New Activity</NavLink>
-       <NavLink className={'nav-link'} exact to={'https://github.com/ArrayaAgustin/PI-Countries-main'}  >GitHub</NavLink>
-       <div class="animation start-home"></div>
-       <SearchBar/>
+   <nav className={s.nav}>
+       <ul className={s.ulNav}>
+        <li className={s.liItem}> <NavLink  style={{ color: 'white', textDecoration: 'none' }} exact to={'/home'}  ><h1>Home</h1></NavLink></li>
+        <li className={s.liItem}>  <NavLink style={{ color: 'white', textDecoration: 'none' }} exact to={'/activity'}  ><h1>New Activity</h1></NavLink></li>
+        <li className={s.liItem}>  <NavLink style={{ color: 'white', textDecoration: 'none' }} exact to={'https://github.com/ArrayaAgustin/PI-Countries-main'}  >GitHub</NavLink>   </li>
+        <li className={s.liItem}>  <SearchBar/></li>
+       </ul>
                
    </nav>
   )

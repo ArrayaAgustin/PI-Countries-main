@@ -1,0 +1,54 @@
+
+.BackGround {
+    display: flex;
+    height: 100vh;
+    min-height: auto;
+    background-image: url(../source/fondo-landing.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    font-family:sans-serif ;
+    min-height: 100vh;
+    align-items: center;
+
+}
+.Title{
+
+}
+
+.Button {
+    background-color:rgb(4, 166, 187);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.Text:hover {
+    background-color: rgb(17, 112, 124);
+    color: rgb(255, 255, 255);
+}
+
+.Text {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 112, 124);
+    font-size: 40px;
+    
+}

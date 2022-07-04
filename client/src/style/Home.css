@@ -1,9 +1,17 @@
+
 .home-container{
     display: flex;
     flex-direction: row;
+    background-image: url('../source/fondo-home2.jpg');
 }
 
 .countries-paginado{
     display: flex;
     flex-direction: column;
+}
+
+.titles h1{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,0 +1,21 @@
+.butt {
+	color:white;
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(1,90,108,1) 100%);
+	border: 2px solid white;
+	margin:10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+    transition-duration: 0.4s;
+	width: 90%;
+	cursor:pointer;
+  }
+
+  .butt:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid #008CBA;
+	box-shadow: 0 12px 16px 0 rgba(240, 233, 233, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
