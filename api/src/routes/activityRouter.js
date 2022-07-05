@@ -14,15 +14,6 @@ router.post("/",async(req,res)=>{
     }
 })
 
-router.get("/",async(req,res)=>{
-    try {
-         const {name,countries}=req.body
-         const act=await createActivity2(name,countries)
-         res.status(201).send(act)
-    } catch (err) {
-        console.log("Error"+err)
-    }
-})
 
 
 

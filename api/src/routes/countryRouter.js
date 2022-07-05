@@ -14,7 +14,7 @@ router.get("/",async(req,res)=>{
 
 router.get("/:id",async(req,res)=>{
     let{id}=req.params
-    id=String(id).toUpperCase();
+    id=String(id);
     
     const country=await getCountry(id)
     if(country){

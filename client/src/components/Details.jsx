@@ -4,12 +4,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import {getCountry } from "../redux/actions/index.js";
 import s from '../style/Details.module.css'
 import imgDetail from '../source/detail-country.jpg'
+import NotFound from './NotFound.jsx';
 
 function Details() {
     const dispatch = useDispatch();
     const navigate=useNavigate()
     const country = useSelector(state => state.country);
-    const {name, image, continent, capital, subregion, area, population, Activities} = country;
+    const {name, image, continent, capital, subregion, area, population, Activities,} = country;
     let { id } = useParams();
   
     useEffect(() => {
@@ -20,8 +21,11 @@ function Details() {
         e.preventDefault();
         navigate('/home');
     }
+    if(!name)
+    return(<NotFound/>)
+    // return(<div><h1>Not Found , 404</h1></div>)
   return (
-   
+    
     <div className={s.main}>
         
     <div className={s.detailCountry} key={id}>

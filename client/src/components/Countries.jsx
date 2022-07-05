@@ -17,8 +17,7 @@ function Countries({Countries}) {
             name={country.name}
             image={country.image}
             continent={country.continent}
-            population={country.population}
-            activities={country.Activities}
+            
             />
            
             
