@@ -62,6 +62,8 @@ export function orderAlpha(order){  //ASC o DESC
     }
   }
 }
+
+
 export function orderPopulation(order){  //MAY o MEN
   return async function(dispatch){
     try {

@@ -9,7 +9,7 @@ export default function Landing(){
             <div className={s.BackGround} >
              
                 <div className={s.Container}>
-                    <Link to='/home' classname={s.Button}>
+                    <Link to='/home' classname={s.Button}  style={{ color: 'white', textDecoration: 'none' }}>
                         <h2 className={s.Text}>Pi-Countries</h2>
                     </Link>
                 </div>

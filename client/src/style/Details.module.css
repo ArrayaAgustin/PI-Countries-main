@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+   
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(1,90,108,1) 100%);
     
@@ -24,7 +25,8 @@
     background-color: var(--contrast);
     width: 850px;
     box-shadow: 10px 10px 5px var(--shadow);
-    border:5px solid black;
+    border:5px solid white;
+    color:white;
 }
 .detailTitle{
     display: inline-block;
@@ -51,19 +53,19 @@
     align-items: center;
     margin :10px;
     display: flex;
-    border:4px solid red;
+    /* border:4px solid red; */
 }
 
 .columnLeft{
  margin:10px;
- border:2px solid blue;
+ border:2px solid white;
  width: auto;
  background-color: black;
  color:white
 }
 .columnRigth{
     margin:10px;
-    border:2px solid blue;
+    border:2px solid white;
     width: auto;
 
     background-color: black;
@@ -73,7 +75,7 @@
 .countryInfo{
    
     margin: 5px ;
-    border:2px solid green;
+    /* border:2px solid green; */
     text-align: center;
     justify-content: center;
     align-items: center;

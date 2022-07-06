@@ -77,6 +77,7 @@ function rootReducer(state=initialState,{type,payload}){
             
         }; 
         case 'FILTER_CONTINENT':
+            state.filter=''
             let countriesFilter=(payload==='All')
             ?state.countries
            :state.countries.filter(c=> c.continent===payload)
@@ -101,6 +102,7 @@ function rootReducer(state=initialState,{type,payload}){
                 pag:1
 
             };
+        
        
         default:
         return {...state}

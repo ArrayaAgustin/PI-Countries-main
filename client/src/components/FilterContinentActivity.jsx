@@ -8,6 +8,8 @@ function FilterContinentActivity() {
 
  const dispatch = useDispatch()
  const countries = useSelector(state => state.countries)
+
+
  
  const [currentContinent, setCurrentContinent] = useState('All');
  const [currentActivity, setCurrentActivity] = useState('All')
@@ -20,6 +22,8 @@ let activitiesList = countries.map(country => country.Activities.map((a)=>a.name
  let activies=[...new Set(activitiesList.flat(1))]
 
 function filtrar(e){
+  var element = document.getElementById("inputSearch");
+   element.value='';
     dispatch(filterContinent(currentContinent))
     dispatch(filterActivity(currentActivity))
 }

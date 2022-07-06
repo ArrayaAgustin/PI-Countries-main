@@ -1,7 +1,7 @@
 import React from 'react'
 import './../style/Country.css'
 import {Link} from 'react-router-dom'
-function Country({id,name,image,continent,population,activities}) {
+function Country({id,name,image,continent,}) {
   return (
     <div className='container'>
      

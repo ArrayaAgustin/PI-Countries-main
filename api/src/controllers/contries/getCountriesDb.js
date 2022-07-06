@@ -27,5 +27,6 @@ const getContriesDb=async(param="")=>{
     }
 }
 
+
 module.exports = { getContriesDb };
 

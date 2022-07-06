@@ -8,9 +8,10 @@ router.post("/",async(req,res)=>{
     try {
          const {name,difficulty,duration,season,countries}=req.body
          const act=await createActivity(name,difficulty,duration,season,countries)
-         res.status(201).json(act)
+         console.log(act);
+         return res.status(201).json(act)
     } catch (err) {
-        console.log("Error"+err)
+       return res.status(400).json('Error base de datos');
     }
 })
 

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import {getCountry } from "../redux/actions/index.js";
+import {getCountry, clear} from "../redux/actions/index.js";
 import s from '../style/Details.module.css'
 import imgDetail from '../source/detail-country.jpg'
 import NotFound from './NotFound.jsx';
@@ -15,6 +15,7 @@ function Details() {
   
     useEffect(() => {
         dispatch(getCountry(id))
+       
     }, [dispatch, id])
 
     const backHome=(e)=>{
@@ -23,7 +24,7 @@ function Details() {
     }
     if(!name)
     return(<NotFound/>)
-    // return(<div><h1>Not Found , 404</h1></div>)
+    
   return (
     
     <div className={s.main}>

@@ -20,7 +20,7 @@ router.get("/:id",async(req,res)=>{
     if(country){
       return res.status(200).json(country)
     }
-   return res.status(404).send("Not Found , pais no encontrado...")
+   return res.status(404).send({error:"Not Found"})
 })
 
 
